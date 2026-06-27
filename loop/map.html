@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Runfindr loop</title>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  html,body{margin:0;height:100%;background:#0e0a16;overflow:hidden}
+  #map{position:absolute;inset:0}
+  /* tone the basemap toward the site palette + hide UI chrome we don't want */
+  .maplibregl-canvas{filter:saturate(0.7) brightness(0.92)}
+  .maplibregl-ctrl-attrib{font-size:10px;background:rgba(14,10,22,.6);color:#9b93b5}
+  .maplibregl-ctrl-attrib a{color:#b9b0d4}
+  .maplibregl-ctrl-logo{display:none}
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script>
+var COORDS = [
+[-73.98422,40.74889],
+[-73.98449,40.74853],
+[-73.98375,40.74812],
+[-73.98344,40.74797],
+[-73.98305,40.74781],
+[-73.98255,40.74832],
+[-73.98207,40.74899],
+[-73.98161,40.74961],
+[-73.98119,40.75019],
+[-73.98071,40.75086],
+[-73.98032,40.7514],
+[-73.98008,40.75173],
+[-73.97986,40.75203],
+[-73.97912,40.75187],
+[-73.9784,40.75157],
+[-73.97762,40.7522],
+[-73.97711,40.75214],
+[-73.97639,40.75289],
+[-73.97598,40.75346],
+[-73.97581,40.7537],
+[-73.97582,40.75398],
+[-73.97576,40.75451],
+[-73.97533,40.75519],
+[-73.97489,40.7558],
+[-73.97468,40.75608],
+[-73.97443,40.75643],
+[-73.97397,40.75705],
+[-73.97351,40.75768],
+[-73.97306,40.7583],
+[-73.9726,40.75893],
+[-73.97282,40.75914],
+[-73.97412,40.75969],
+[-73.97573,40.76036],
+[-73.97686,40.76084],
+[-73.97726,40.76101],
+[-73.97732,40.76104],
+[-73.97765,40.76118],
+[-73.97771,40.7612],
+[-73.97808,40.76136],
+[-73.97823,40.76142],
+[-73.97862,40.7616],
+[-73.97906,40.76177],
+[-73.9792,40.76183],
+[-73.97953,40.76197],
+[-73.98008,40.7622],
+[-73.98064,40.76243],
+[-73.98075,40.76248],
+[-73.98123,40.76268],
+[-73.98154,40.76281],
+[-73.9819,40.76297],
+[-73.98203,40.76302],
+[-73.98274,40.76332],
+[-73.98304,40.76313],
+[-73.98322,40.7628],
+[-73.98364,40.76215],
+[-73.98483,40.76257],
+[-73.98552,40.76286],
+[-73.98644,40.76325],
+[-73.98721,40.76357],
+[-73.98753,40.76371],
+[-73.98836,40.76406],
+[-73.98876,40.76375],
+[-73.9889,40.76355],
+[-73.98921,40.76312],
+[-73.98936,40.76292],
+[-73.98966,40.7625],
+[-73.98981,40.76229],
+[-73.99027,40.76167],
+[-73.99063,40.76117],
+[-73.99118,40.76042],
+[-73.99157,40.75988],
+[-73.99209,40.75917],
+[-73.99235,40.75883],
+[-73.99257,40.75854],
+[-73.99302,40.75792],
+[-73.99346,40.75732],
+[-73.99383,40.7568],
+[-73.99398,40.75659],
+[-73.99433,40.7561],
+[-73.99451,40.75586],
+[-73.9948,40.75547],
+[-73.99524,40.75488],
+[-73.99465,40.75437],
+[-73.99444,40.75428],
+[-73.99291,40.75364],
+[-73.99253,40.75348],
+[-73.99239,40.75342],
+[-73.99156,40.75307],
+[-73.98981,40.75234],
+[-73.99009,40.75172],
+[-73.99055,40.75109],
+[-73.99107,40.75039],
+[-73.9915,40.74979],
+[-73.99095,40.74945],
+[-73.98976,40.74895],
+[-73.98884,40.74856],
+[-73.98828,40.74906],
+[-73.98791,40.74956],
+[-73.9877,40.74988],
+[-73.98741,40.75028],
+[-73.98704,40.7508],
+[-73.98687,40.75103],
+[-73.98614,40.75079],
+[-73.98446,40.75008],
+[-73.98404,40.7499],
+[-73.98376,40.74979],
+[-73.98403,40.74916],
+[-73.98422,40.74889]
+];
+var map = new maplibregl.Map({
+  container:'map',
+  interactive:false,
+  attributionControl:{compact:true},
+  style:{
+    version:8,
+    sources:{carto:{type:'raster',tileSize:256,
+      tiles:['https://a.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+             'https://b.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+             'https://c.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png',
+             'https://d.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}@2x.png'],
+      attribution:'&copy; OpenStreetMap &copy; CARTO'}},
+    layers:[{id:'carto',type:'raster',source:'carto'}]
+  }
+});
+
+function line(cs){return {type:'Feature',geometry:{type:'LineString',coordinates:cs}};}
+function pt(c){return {type:'Feature',geometry:{type:'Point',coordinates:c}};}
+
+map.on('load', function(){
+  var b = COORDS.reduce(function(bb,c){return bb.extend(c);}, new maplibregl.LngLatBounds(COORDS[0],COORDS[0]));
+  map.fitBounds(b,{padding:46, duration:0});
+
+  map.addSource('route',{type:'geojson',data:line([COORDS[0]])});
+  map.addLayer({id:'route-glow',type:'line',source:'route',
+    layout:{'line-cap':'round','line-join':'round'},
+    paint:{'line-color':'#e950dc','line-width':11,'line-blur':12,'line-opacity':0.55}});
+  map.addLayer({id:'route-core',type:'line',source:'route',
+    layout:{'line-cap':'round','line-join':'round'},
+    paint:{'line-color':'#fb6cf2','line-width':3.6}});
+
+  map.addSource('dot',{type:'geojson',data:pt(COORDS[0])});
+  map.addLayer({id:'dot-glow',type:'circle',source:'dot',
+    paint:{'circle-radius':13,'circle-color':'#e950dc','circle-blur':1,'circle-opacity':0.7}});
+  map.addLayer({id:'dot-core',type:'circle',source:'dot',
+    paint:{'circle-radius':5,'circle-color':'#ffffff','circle-stroke-width':2,'circle-stroke-color':'#fb6cf2'}});
+
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){
+    map.getSource('route').setData(line(COORDS));
+    map.getSource('dot').setData(pt(COORDS[0]));
+    return;
+  }
+
+  var N=COORDS.length, DRAW=4800, HOLD=1300, FADE=800, GAP=250, T=DRAW+HOLD+FADE+GAP;
+  var start=null;
+  function setOpacity(o){
+    map.setPaintProperty('route-glow','line-opacity',0.55*o);
+    map.setPaintProperty('route-core','line-opacity',o);
+    map.setPaintProperty('dot-glow','circle-opacity',0.7*o);
+    map.setPaintProperty('dot-core','circle-opacity',o);
+  }
+  function frame(ts){
+    if(start===null) start=ts;
+    var e=(ts-start)%T;
+    if(e<DRAW){
+      var f=e/DRAW, n=Math.max(2,Math.floor(f*(N-1))+1);
+      map.getSource('route').setData(line(COORDS.slice(0,n)));
+      map.getSource('dot').setData(pt(COORDS[n-1]));
+      setOpacity(1);
+    } else if(e<DRAW+HOLD){
+      map.getSource('route').setData(line(COORDS));
+      map.getSource('dot').setData(pt(COORDS[N-1]));
+      setOpacity(1);
+    } else if(e<DRAW+HOLD+FADE){
+      setOpacity(1-(e-DRAW-HOLD)/FADE);
+    } else {
+      map.getSource('route').setData(line([COORDS[0]]));
+      map.getSource('dot').setData(pt(COORDS[0]));
+      setOpacity(0);
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+});
+</script>
+</body>
+</html>
