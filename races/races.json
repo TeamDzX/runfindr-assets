@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "updated": "2026-07-10",
   "races": [
     {
@@ -10,7 +10,8 @@
       "flag": "🇦🇺",
       "distanceKm": 42.2,
       "date": "2026-08-30",
-      "website": "https://www.tcssydneymarathon.com/"
+      "website": "https://www.tcssydneymarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/sydney-marathon.jpg"
     },
     {
       "id": "big-half",
@@ -20,7 +21,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2026-09-06",
-      "website": "https://www.londonmarathonevents.co.uk/big-half"
+      "website": "https://www.londonmarathonevents.co.uk/big-half",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/big-half.jpg"
     },
     {
       "id": "great-north-run",
@@ -30,7 +32,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2026-09-13",
-      "website": "https://www.greatrun.org/events/great-north-run/"
+      "website": "https://www.greatrun.org/events/great-north-run/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/great-north-run.jpg"
     },
     {
       "id": "copenhagen-half",
@@ -40,7 +43,8 @@
       "flag": "🇩🇰",
       "distanceKm": 21.1,
       "date": "2026-09-20",
-      "website": "https://cphhalf.dk/"
+      "website": "https://cphhalf.dk/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/copenhagen-half.jpg"
     },
     {
       "id": "berlin-marathon",
@@ -61,7 +65,8 @@
       "flag": "🇬🇧",
       "distanceKm": 10.0,
       "date": "2026-09-27",
-      "website": "https://www.londonmarathonevents.co.uk/london-10000"
+      "website": "https://www.londonmarathonevents.co.uk/london-10000",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/london-10000.jpg"
     },
     {
       "id": "cardiff-half",
@@ -71,7 +76,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2026-10-04",
-      "website": "https://www.cardiffhalfmarathon.co.uk/"
+      "website": "https://www.cardiffhalfmarathon.co.uk/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/cardiff-half.jpg"
     },
     {
       "id": "great-scottish-run",
@@ -81,7 +87,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2026-10-04",
-      "website": "https://www.greatrun.org/events/great-scottish-run/"
+      "website": "https://www.greatrun.org/events/great-scottish-run/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/great-scottish-run.jpg"
     },
     {
       "id": "chicago-marathon",
@@ -91,7 +98,8 @@
       "flag": "🇺🇸",
       "distanceKm": 42.2,
       "date": "2026-10-11",
-      "website": "https://www.chicagomarathon.com/"
+      "website": "https://www.chicagomarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/chicago-marathon.jpg"
     },
     {
       "id": "royal-parks-half",
@@ -101,7 +109,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2026-10-11",
-      "website": "https://www.royalparkshalf.com/"
+      "website": "https://www.royalparkshalf.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/royal-parks-half.jpg"
     },
     {
       "id": "amsterdam-marathon",
@@ -111,7 +120,8 @@
       "flag": "🇳🇱",
       "distanceKm": 42.2,
       "date": "2026-10-18",
-      "website": "https://www.tcsamsterdammarathon.eu/"
+      "website": "https://www.tcsamsterdammarathon.eu/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/amsterdam-marathon.jpg"
     },
     {
       "id": "dublin-marathon",
@@ -121,7 +131,8 @@
       "flag": "🇮🇪",
       "distanceKm": 42.2,
       "date": "2026-10-25",
-      "website": "https://irishlifedublinmarathon.ie/"
+      "website": "https://irishlifedublinmarathon.ie/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/dublin-marathon.jpg"
     },
     {
       "id": "marine-corps-marathon",
@@ -131,7 +142,8 @@
       "flag": "🇺🇸",
       "distanceKm": 42.2,
       "date": "2026-10-25",
-      "website": "https://www.marinemarathon.com/"
+      "website": "https://www.marinemarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/marine-corps-marathon.jpg"
     },
     {
       "id": "nyc-marathon",
@@ -152,7 +164,8 @@
       "flag": "🇬🇷",
       "distanceKm": 42.2,
       "date": "2026-11-08",
-      "website": "https://www.athensauthenticmarathon.gr/"
+      "website": "https://www.athensauthenticmarathon.gr/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/athens-marathon.jpg"
     },
     {
       "id": "leeds-abbey-dash",
@@ -162,7 +175,8 @@
       "flag": "🇬🇧",
       "distanceKm": 10.0,
       "date": "2026-11-29",
-      "website": "https://www.runforall.com/events/10k/abbey-dash/"
+      "website": "https://www.runforall.com/events/10k/abbey-dash/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/leeds-abbey-dash.jpg"
     },
     {
       "id": "valencia-marathon",
@@ -172,7 +186,8 @@
       "flag": "🇪🇸",
       "distanceKm": 42.2,
       "date": "2026-12-06",
-      "website": "https://www.valenciaciudaddelrunning.com/en/marathon/"
+      "website": "https://www.valenciaciudaddelrunning.com/en/marathon/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/valencia-marathon.jpg"
     },
     {
       "id": "honolulu-marathon",
@@ -182,7 +197,8 @@
       "flag": "🇺🇸",
       "distanceKm": 42.2,
       "date": "2026-12-13",
-      "website": "https://www.honolulumarathon.org/"
+      "website": "https://www.honolulumarathon.org/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/honolulu-marathon.jpg"
     },
     {
       "id": "tokyo-marathon",
@@ -192,7 +208,8 @@
       "flag": "🇯🇵",
       "distanceKm": 42.2,
       "date": "2027-03-07",
-      "website": "https://www.marathon.tokyo/en/"
+      "website": "https://www.marathon.tokyo/en/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/tokyo-marathon.jpg"
     },
     {
       "id": "lisbon-half",
@@ -202,7 +219,8 @@
       "flag": "🇵🇹",
       "distanceKm": 21.1,
       "date": "2027-03-07",
-      "website": "https://maratonaclubedeportugal.com/"
+      "website": "https://maratonaclubedeportugal.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/lisbon-half.jpg"
     },
     {
       "id": "barcelona-marathon",
@@ -212,7 +230,8 @@
       "flag": "🇪🇸",
       "distanceKm": 42.2,
       "date": "2027-03-14",
-      "website": "https://www.zurichmaratobarcelona.es/"
+      "website": "https://www.zurichmaratobarcelona.es/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/barcelona-marathon.jpg"
     },
     {
       "id": "rome-marathon",
@@ -222,7 +241,8 @@
       "flag": "🇮🇹",
       "distanceKm": 42.2,
       "date": "2027-03-14",
-      "website": "https://www.runromethemarathon.com/"
+      "website": "https://www.runromethemarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/rome-marathon.jpg"
     },
     {
       "id": "bath-half",
@@ -232,7 +252,8 @@
       "flag": "🇬🇧",
       "distanceKm": 21.1,
       "date": "2027-03-14",
-      "website": "https://www.londonmarathonevents.co.uk/bath-half"
+      "website": "https://www.londonmarathonevents.co.uk/bath-half",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/bath-half.jpg"
     },
     {
       "id": "nyc-half",
@@ -242,7 +263,8 @@
       "flag": "🇺🇸",
       "distanceKm": 21.1,
       "date": "2027-03-21",
-      "website": "https://www.nyrr.org/nychalf"
+      "website": "https://www.nyrr.org/nychalf",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/nyc-half.jpg"
     },
     {
       "id": "brighton-marathon",
@@ -252,7 +274,8 @@
       "flag": "🇬🇧",
       "distanceKm": 42.2,
       "date": "2027-04-04",
-      "website": "https://www.londonmarathonevents.co.uk/brighton-marathon-weekend"
+      "website": "https://www.londonmarathonevents.co.uk/brighton-marathon-weekend",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/brighton-marathon.jpg"
     },
     {
       "id": "carlsbad-5000",
@@ -262,7 +285,8 @@
       "flag": "🇺🇸",
       "distanceKm": 5.0,
       "date": "2027-04-04",
-      "website": "https://carlsbad5000.com/"
+      "website": "https://carlsbad5000.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/carlsbad-5000.jpg"
     },
     {
       "id": "paris-marathon",
@@ -272,7 +296,8 @@
       "flag": "🇫🇷",
       "distanceKm": 42.2,
       "date": "2027-04-11",
-      "website": "https://www.schneiderelectricparismarathon.com/"
+      "website": "https://www.schneiderelectricparismarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/paris-marathon.jpg"
     },
     {
       "id": "rotterdam-marathon",
@@ -282,7 +307,8 @@
       "flag": "🇳🇱",
       "distanceKm": 42.2,
       "date": "2027-04-11",
-      "website": "https://nnmarathonrotterdam.nl/"
+      "website": "https://nnmarathonrotterdam.nl/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/rotterdam-marathon.jpg"
     },
     {
       "id": "manchester-marathon",
@@ -292,7 +318,8 @@
       "flag": "🇬🇧",
       "distanceKm": 42.2,
       "date": "2027-04-18",
-      "website": "https://www.manchestermarathon.co.uk/"
+      "website": "https://www.manchestermarathon.co.uk/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/manchester-marathon.jpg"
     },
     {
       "id": "vancouver-sun-run",
@@ -302,7 +329,8 @@
       "flag": "🇨🇦",
       "distanceKm": 10.0,
       "date": "2027-04-18",
-      "website": "https://www.vancouversunrun.com/"
+      "website": "https://www.vancouversunrun.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/vancouver-sun-run.jpg"
     },
     {
       "id": "boston-marathon",
@@ -312,7 +340,8 @@
       "flag": "🇺🇸",
       "distanceKm": 42.2,
       "date": "2027-04-19",
-      "website": "https://www.baa.org/races/boston-marathon"
+      "website": "https://www.baa.org/races/boston-marathon",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/boston-marathon.jpg"
     },
     {
       "id": "london-marathon",
@@ -333,7 +362,8 @@
       "flag": "🇪🇸",
       "distanceKm": 42.2,
       "date": "2027-04-25",
-      "website": "https://rocknrollmadridrun.com/"
+      "website": "https://rocknrollmadridrun.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/madrid-marathon.jpg"
     },
     {
       "id": "great-manchester-run",
@@ -343,7 +373,8 @@
       "flag": "🇬🇧",
       "distanceKm": 10.0,
       "date": "2027-05-23",
-      "website": "https://www.greatrun.org/events/great-manchester-run/"
+      "website": "https://www.greatrun.org/events/great-manchester-run/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/great-manchester-run.jpg"
     },
     {
       "id": "cape-town-marathon",
@@ -353,7 +384,8 @@
       "flag": "🇿🇦",
       "distanceKm": 42.2,
       "date": "2027-05-23",
-      "website": "https://capetownmarathon.com/"
+      "website": "https://capetownmarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/cape-town-marathon.jpg"
     },
     {
       "id": "edinburgh-marathon",
@@ -363,7 +395,8 @@
       "flag": "🇬🇧",
       "distanceKm": 42.2,
       "date": "2027-05-30",
-      "website": "https://www.edinburghmarathon.com/"
+      "website": "https://www.edinburghmarathon.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/edinburgh-marathon.jpg"
     },
     {
       "id": "bolder-boulder",
@@ -373,7 +406,8 @@
       "flag": "🇺🇸",
       "distanceKm": 10.0,
       "date": "2027-05-31",
-      "website": "https://www.bolderboulder.com/"
+      "website": "https://www.bolderboulder.com/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/bolder-boulder.jpg"
     },
     {
       "id": "gold-coast-marathon",
@@ -383,7 +417,8 @@
       "flag": "🇦🇺",
       "distanceKm": 42.2,
       "date": "2027-07-04",
-      "website": "https://goldcoastmarathon.com.au/"
+      "website": "https://goldcoastmarathon.com.au/",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/gold-coast-marathon.jpg"
     },
     {
       "id": "peachtree-road-race",
@@ -393,7 +428,8 @@
       "flag": "🇺🇸",
       "distanceKm": 10.0,
       "date": "2027-07-04",
-      "website": "https://www.atlantatrackclub.org/peachtree"
+      "website": "https://www.atlantatrackclub.org/peachtree",
+      "thumbnail": "https://raw.githubusercontent.com/TeamDzX/runfindr-assets/main/races/thumbs/peachtree-road-race.jpg"
     }
   ]
 }
